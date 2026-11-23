@@ -4,7 +4,8 @@ services:
     ports:
       - "8000:8000"
     environment:
-      # 槽位数可配；演示用小数值让覆盖更快发生
+      # 启动配置的物理槽位数；也是在线调容上限的最大值。
+      # 演示用小数值让覆盖/调容更快发生。
       SLOT_COUNT: "4"
       DATA_DIR: /data
     volumes:
